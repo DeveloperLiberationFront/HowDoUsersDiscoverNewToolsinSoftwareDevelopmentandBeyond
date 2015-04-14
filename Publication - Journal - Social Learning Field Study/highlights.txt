@@ -1,0 +1,3 @@
+Programmers generally believe that discovering a software development tool from a peer is effective.
+Software users rarely discover new tools from peers.
+The most common ways software users discover new tools is by encountering them in the software's user interface.
