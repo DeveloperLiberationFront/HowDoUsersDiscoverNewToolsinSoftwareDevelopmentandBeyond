@@ -765,7 +765,7 @@ We were interested in blogs and Twitter
 because we suspected that they played a role in tool discovery.
 We will explain the right two columns of Table~\ref{tbl:social} in the next section.
 
-\subsubsection{Results}
+\subsubsection{Results}\label{sec:interviewresults}
 
 \noindent
 Overall, participants reported 41 different instances of \discovery,
@@ -1871,7 +1871,7 @@ Participants were not aware that we were exclusively interested in serendipitous
 discovery.
 Of the 156 tool discovery reports submitted, 45 of them met this criteria.
 
-\subsubsection{Results}  
+\subsubsection{Results}\label{sec:diaryresults}  
 
 \paragraph{Frequency.}
 \jh{For each data analysis result, it would be good if the authors describe the overview of the results and point out interesting points of the results. It seems not to be easy to find interesting points when others (who are not familiar to this research) look at table.}
@@ -2011,6 +2011,7 @@ To investigate this further, we evaluated whether age, job length and experience
 correlated with discovery frequency.
 Using a Pearson correlation, we found that age is very weakly correlated with number of tool discoveries (r=-0.03 and n=47). 
 Similarly, job length and experience show weak correlations with number of discoveries (r=-0.1 and n=55, and r=0.06 and n=55, respectively).
+This suggests that users discover new tools at all levels of experience.
 %TODO are these statistically significant? if so, p value? 
 %Second, we compared discovery frequencies for discrete maturity groups, that is,
 %students versus workers and student developers versus professional developers.
@@ -2214,8 +2215,8 @@ and methodological implications.
 
 \noindent
 Our diary study suggests that users discover new tools 
-at all levels of experience, underscoring the importance of
-discoverability for all types of users.
+at all levels of experience (Section~\ref{sec:diaryresults}, \textit{Discovery Frequency by Age and Experience}), 
+underscoring the importance of discoverability for all types of users.
 We suggest that there are at least two ways toolsmiths can make
 tools more discoverable, so that when users interact, \discovery is 
 more likely to be successful.
@@ -2224,7 +2225,7 @@ more likely to be successful.
 easily observed, then an observing user is more likely to
 both recognize that a tool was used and, implicitly, know how the tool is used.
 A positive example of such a tool --- and one mentioned by several
-programmers in our study --- is Eclipse's Open Type dialog box, which
+programmers in our interview study --- is Eclipse's Open Type dialog box, which
 shows a noticeable dialog box used for searching.
 Hotkeys, used in many software environments so that
 users can quickly invoke commands, such as \texttt{Ctrl+]} in Microsoft Word to increase text size, 
@@ -2287,7 +2288,7 @@ future changes to the template are reflected in the slide.
 
 \noindent
 Our results from both studies suggest that \discovery is already
-very rare.
+very rare (Figures~\ref{tab:discoveryTypes} and~\ref{fig:freq}).
 As teams increasingly do more and more work in a remote fashion,
 our section on barriers to \discovery imply that
 it will become even more challenging for remote teammates to learn
@@ -2335,11 +2336,11 @@ Twitter bears some similarity to \discpush in that
 both are types of social discovery, yet few interviewees and 
 zero participants in the diary study learned about tools via Twitter.
 One reason that interviewees cited for Twitter being ineffective is lack of trust
-in the sources and lack of relevance.
+in the sources and lack of relevance (Section~\ref{sec:interviewresults}, \textit{Effectiveness of Twitter/RSS}).
 From the interviews, it appears what programmers meant by trust was that the
 recommender (human or otherwise) requires some prior interaction with the
 recommendation recipient, so that the programmer can estimate the recommender's knowledge and
-skills.
+skills (Section~\ref{sec:interviewresults}, \textit{Discovery Modes}).
 Our studies suggest that trust and relevance might improve if the Twitter
 messages originated from a trusted peer, someone that a software user works with
 or has worked with in the past.
@@ -2350,7 +2351,9 @@ uses a novel tool and generates microblog messages to coworkers on her behalf.
 Several interviewees reported watching screencasts that were professionally
 produced (e.g., \url{peepcode.com}).
 Although watching screencasts is similar to \discpull, participants reported
-that the tools used in screencasts may not be very relevant, presumably because
+that the tools used in screencasts may not be very relevant 
+(Section~\ref{sec:interviewresults}, \textit{Effectiveness of Tutorials}), 
+presumably because
 the people who made the professional screencasts did not have working
 styles that aligned with individual interviewees' working styles.
 Because peers are more likely to have similar working styles, a
@@ -2377,7 +2380,7 @@ which takes the form of a virtual talking paperclip to recommend features of
 Microsoft Word.
 In what follows, we discuss two design considerations for such systems.
 
-\paraHead{Trust.} Interviewees' frequent refrain of the necessity of trust
+\paraHead{Trust.} Interviewees' frequent refrain of the necessity of trust (Section~\ref{sec:interviewresults})
 underscores its importance in a recommender system for tools. 
 \ksub, when asked about his opinion of a potential recommender system, summed up
 the problem as:
@@ -2422,7 +2425,7 @@ examining the limitations of \discovery.
 
 Interviewees noted that \discovery does not work when the peers are under time
 pressure because the teacher feels like he cannot respond to the learner's
-question, ``what did you just do?''
+question, ``what did you just do?'' (Section~\ref{sec:interviewresults}, \textit{Barriers to Peer Interaction}).
 If a recommender system can capture experts' usage of tools, that
 usage can be played back repeatedly and at the convenience of a user who
 wants to learn a tool.
@@ -2437,7 +2440,8 @@ This is the approach taken by some recommender systems, such as
 CommunityCommands~\cite{matejka09}.
 
 Interviewees noted that sometimes they did not make recommendations because they
-did not think that their peer was ready to appreciate the usefulness of a tool.
+did not think that their peer was ready to appreciate the usefulness of a tool 
+(Section~\ref{sec:interviewresults}, \textit{Barriers to Peer Interaction}).
 One way that recommender systems could deal with this would be to explicitly
 model how specific users learn by monitoring what tools they know,
 and inferring discovery patterns and contexts. 
