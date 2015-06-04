@@ -21,6 +21,7 @@
 			linkcolor=blue, 
 			citecolor=OliveGreen, 
 			urlcolor=blue]{hyperref}			% should come last
+\usepackage{apalike}
 
 \usepackage{breakurl}
 \usepackage{caption}
@@ -28,6 +29,7 @@
 %\usepackage[font=small,labelsep=none]{caption}
 %\pdfpagewidth=8.5in
 %\pdfpageheight=11in
+\usepackage{natbib}
 
 \graphicspath{{figs/}}
 \DeclareGraphicsExtensions{.pdf, .png, .ps, .eps}   % NOT .jpg  because it throws away the detail.
@@ -178,7 +180,7 @@ be enhanced by improving software users' ability to communicate openly and conci
 
 \noindent
 Software tools such as the functionality to correct grammar in Microsoft
-Word~\cite{word} or to recover recently closed tabs in Mozilla Firefox~\cite{firefox}, allow users to 
+Word~\citeyearpar{word} or to recover recently closed tabs in Mozilla Firefox~\citeyearpar{firefox}, allow users to 
 perform their tasks more efficiently and do things they were unable to do
 previously.
 We define a `tool' broadly as any software that helps a user accomplish a task.
@@ -191,13 +193,13 @@ Users have difficulty discovering tools that might be
 useful to them.
 When we say that a user discovers a tool, we mean that she becomes
 aware of that tool.
-For example, when Grossman and colleagues conducted a study of 10 users of
+For example, when Grossman and colleagues~\citeyearpar{grossman09} conducted a study of 10 users of
 a computer-aided drafting application, they found that a ``typical problem was
 that users were not aware of a specific tool or operation which was available for
-use''~\cite{grossman09}.
-As another example, Campbell and Miller have noted that awareness is a problem
+use''.
+As another example, Campbell and Miller~\citeyearpar{campbell08} have noted that awareness is a problem
 in integrated development environments that are used by
-programmers~\cite{campbell08}. 
+programmers. 
 Arguably, in any sophisticated software, many
 users will remain unaware of the full range of tools available.
 
@@ -207,16 +209,16 @@ There has been relatively little research into such solutions.
 In contrast, there has been
 considerable research into technical solutions.
 Some applications attempt to solve this problem with tip-of-the-day messages or
-role-based customizations of the user interface~\cite{findlater08}.
+role-based customizations of the user interface~\citep{findlater08}.
 Researchers have proposed other technical solutions as well,
 such as recommender systems that suggest tools that you are not currently 
-using~\cite{linton,maltzahn,matejka09}.
+using~\citep{linton,maltzahn,matejka09}.
 These systems attempt to assist or replicate users helping other users, 
-such as Maltzahn's ToolBox~\cite{maltzahn}, which helps Unix users find new commands based on the
+such as ToolBox~\citep{maltzahn}, which helps Unix users find new commands based on the
 commands that their coworkers are using.
-As Fischer and colleagues point out, these technical solutions ``should guide
+As Fischer and colleagues~\citeyearpar[p.~115]{fischer84} point out, these technical solutions ``should guide
 and advise an user [sic] similar to a knowledgeable colleague or
-assistant''~\cite[p.~115]{fischer84}, so understanding how such knowledge is
+assistant'', so understanding how such knowledge is
 transferred socially should help inform the design of such technical solutions.
 
 To illustrate what we mean by social solutions to the awareness problem, let us
@@ -271,7 +273,7 @@ software users collaborate to discover new tools.
 Our long-term research goal is to encourage all kinds of software users to 
 discover useful tools more successfully, more frequently.
 
-This paper is an extension of a conference paper presented at CSCW 2011~\cite{murphy-hill11:peer},
+This paper is an extension of a conference paper presented at CSCW 2011~\citep{murphy-hill11:peer},
 where we presented the first study.
 In that paper, we made three primary contributions:
 
@@ -310,12 +312,12 @@ learning, described in several areas of related work.
 \noindent
 Two existing studies have looked at tool discoverability directly.
 First, in prior work we interviewed software developers to 
-understand why they adopt security tools~\cite{xiao}.
+understand why they adopt security tools~\citep{xiao}.
 Although that study is similar to the first study we report in this paper, 
 the present paper seeks to understand
 tool adoption in a wider context: beyond security tools and beyond software developers.
 Second, the diary study that we present in this paper is similar to 
-a study performed by Rieman~\cite{rieman}.
+a study performed by Rieman~\citeyearpar{rieman}.
 Rieman asked 14 computer users to keep a diary of
 daily activities and specific learning events.
 The main difference between Rieman's diary study and our
@@ -331,25 +333,25 @@ study we describe 45 reports of exclusively serendipitous tool discoveries.
 
 \noindent Diffusion of Innovations is a theory that attempts to explain ``the
 process by which an innovation is communicated through certain channels over
-time among the members of a social system''~\cite{rogers03}.
+time among the members of a social system''~\citep{rogers03}.
 Typical studies of Diffusion of Innovations include research about internet use,
 hybrid corn in the US, and water sanitation in developing countries.
 Similar models have been developed for more specific contexts, including 
-the Technology Acceptance Model~\cite{DAVI89,VENK00}, Perceived
-Characteristics of Innovating~\cite{MOOR91}, Theory of Planned
-Behavior~\cite{AJZE91}, and Model of Personal Computers
-Utilization~\cite{THOM91}.
+the Technology Acceptance Model~\citep{DAVI89,VENK00}, Perceived
+Characteristics of Innovating~\citep{MOOR91}, Theory of Planned
+Behavior~\citep{AJZE91}, and Model of Personal Computers
+Utilization~\citep{THOM91}.
 Both studies presented in this paper can be considered Diffusion of Innovation
 studies that investigate tool discovery.
 
 Several studies have investigated Diffusion of Innovations in
 other software engineering contexts.
-For example, Fichman and Kemerer describe how programming
+For example, Fichman and Kemerer~\citeyearpar{fichman99} describe how programming
 languages, relational databases, and Computer-Aided Software/Systems Engineering (CASE) tools are
-acquired and deployed in organizations~\cite{fichman99}. 
-Similarly, Iivari described a study that suggests that the reason that
+acquired and deployed in organizations. 
+Similarly, Iivari~\citeyearpar{iivari} described a study that suggests that the reason that
 companies do not use CASE tools is because of a lack of management support, a 
-lack of perceived advantage, and a lack of freedom of choice~\cite{iivari}.
+lack of perceived advantage, and a lack of freedom of choice.
 Such research addresses critical issues, but it also
 tends to focus on tools that require a significant investment of time 
 or money, and thus warrant careful organizational consideration of whether or
@@ -369,46 +371,46 @@ those environments.
 Tool discovery is closely related to learning, in that discovery can be thought 
 of as part of certain learning theories.
 
-One related theory is Lave and Wenger's situated learning~\cite{lave}, where the learning
+One related theory is Lave and Wenger's~\citeyearpar{lave} situated learning, where the learning
 occurs in the same place that the learning is used, a more general form of
 \discovery.
 For instance, apprenticeships are a kind of situated learning. 
-Whereas Lave and Wegner have largely studied a fixed teacher-learner
+Whereas Lave and Wenger have largely studied a fixed teacher-learner
 relationship, our research on \discovery is on learning in peer-peer relations. 
-Despite a focus on teacher-learner relationships, Lave and Wegner imply that
+Despite a focus on teacher-learner relationships, Lave and Wenger imply that
 there is significant potential in peer-peer learning: ``There is anecdotal
 evidence\ldots that where circulation of knowledge among peers and near-peers
-is possible, it spreads exceedingly rapidly and effectively''~\cite{lave}.
+is possible, it spreads exceedingly rapidly and effectively.''
 Our studies confirm this implication.
 
-Another type of learning is Marsick and Watkin's informal and incidental
+Another type of learning is Marsick and Watkin's~\citeyearpar{marsick01} informal and incidental
 learning, where learning happens as a by-product of other
-activities~\cite{marsick01}. 
+activities. 
 Marsick and Watkins note that with this type, ``control of learning
-rests primarily in the hands of the learner''~\cite{marsick01}.
+rests primarily in the hands of the learner.''
 In contrast, in \discovery, learning is controlled by two people. 
 We extend research on informal and incidental learning 
 into the domain of software.
 
-The zone of proximal development~\cite{vygotsky}, the distance between
+The zone of proximal development~\citep{vygotsky}, the distance between
 what a learner can do on her own and what she can do with help from
 more capable peers, is also related in that learning about tools during
 \discovery is within the zone of proximal development.
 While the zone of proximal development has applied to help people learn
-while using software~\cite{borthick,crook,luckin},
+while using software~\citep{borthick,crook,luckin},
 we do not believe it has been applied to understanding how people
 learn software itself.
 
-% Constructionist learning~\cite{papert}, where a person learns by
+% Constructionist learning~\citep{papert}, where a person learns by
 % constructing a mental model of a thing by manipulating that thing,
 % is also somewhat related\ldots eh, not seeing the connection.
 
 Yet another related concept is over-the-shoulder learning, where colleagues help
-each other informally to use a computer application~\cite{twidale05}; 
+each other informally to use a computer application~\citep{twidale05}; 
 over-the-shoulder learning is closely related to \discovery in that
 they both occur among peers and both in a technology setting.
 The difference is that work on over-the-shoulder learning, as 
-defined by Twidale~\cite{twidale05}, is focused on situations where the learner purposefully asks for help,
+defined by Twidale~\citeyearpar{twidale05}, is focused on situations where the learner purposefully asks for help,
 not in situations when the learner discovers a new tool serendipitously.
 %this is a generalization; but I can only find one empr. OTSL paper; cited
 In \discovery, the learner does not initially know that she might find a tool
@@ -417,12 +419,12 @@ useful.
 \subsection{Learning During Programming}
 
 Some existing work has explored software tool learning specifically in the domain
-of programming, such as Cockburn and Williams description
-of learning of tools from peers during pair programming~\cite{cockburn00}.
+of programming, such as Cockburn and Williams'~\citeyearpar{cockburn00} description
+of learning of tools from peers during pair programming.
 Specifically, they describe \discovery happening during pair programming, 
 when two programmers work on the same programming task at the same computer.
 In such situations, the ``driver'' is at the keyboard, and the ``navigator'' is
-sitting beside the driver, observing and making suggestions~\cite{cockburn00}.
+sitting beside the driver, observing and making suggestions.
 We hypothesize that a programmer may discover a new tool in either role:
 \begin{itemize}
 \item
@@ -467,8 +469,8 @@ and the taught, from moment to moment.
 Similar statements, describing \discovery (as well as other kinds of learning),
 which suggest that knowledge about tools is passed between programmers, is oft
 repeated in the literature, but little evidence previously existed to support
-it. Both Cockburn and Williams~\cite{cockburn00} and M\"{u}ller and
-Tichy~\cite{muller} provide evidence that student programmers learn a variety
+it. Both Cockburn and Williams~\citeyearpar{cockburn00} and M\"{u}ller and
+Tichy~\citeyearpar{muller} provide evidence that student programmers learn a variety
 of technologies during pair programming, but as M\"{u}ller and
 Tichy question, ``are these conclusions generalizable to professional software
 developers?''
@@ -493,13 +495,13 @@ our findings through a diary study of a variety of software users.
 
 \noindent
 Programmers work with environments that contain thousands
-of tools~\cite{murphyHill12c}, and the number of available tools is frequently expanding 
+of tools~\citep{murphyHill12c}, and the number of available tools is frequently expanding 
 because new ``plugins'' are often added to such environments;
 as a result, we began our research of \discovery in the domain of programming.
 Using Cockburn and Williams' research as a starting point, we conducted 
 an interview study (Section~\ref{sec:thefirststudy})
 to determine how \discovery works and how it relates to other
-modes of discovery, such as Twitter~\cite{twitter} and exploring an application's user
+modes of discovery, such as Twitter~\citeyearpar{twitter} and exploring an application's user
 interface. 
 After the interview study, we conducted a diary study 
 (Section~\ref{sec:thesecondstudy})
@@ -522,8 +524,8 @@ effects of \discovery, not just the events that are visible from an
 observing researcher's perspective.
 Our interviews are an instance of the Critical Incident Technique, where
 researchers gather observations about individuals' contributions to 
-an activity~\cite{flanagan1954critical}. 
-Readers of our prior CSCW paper~\cite{murphy-hill11:peer} may safely skip
+an activity~\citep{flanagan1954critical}. 
+Readers of our prior CSCW paper~\citep{murphy-hill11:peer} may safely skip
 this section because it does not differ significantly from the study we presented
 there.
 
@@ -532,22 +534,22 @@ there.
 \noindent
 We conducted one-on-one, semi-structured telephone or
 instant-messaging interviews lasting about an hour each.
-The interview script can be found in the Appendix~\cite{appendix}.
+The interview script can be found in the Appendix~\citep{appendix}.
 The interview began with questions to ascertain the
 participant's programming experience.
 Next, we defined tools broadly as 
 ``something that helps you perform a task,''
 and referred the participant to a document that listed several pictures of 
-different kinds of programming tools, which we chose from the Eclipse~\cite{eclipse} and
-Visual Studio~\cite{visualstudio} development environments, 
-as well as the extensible editors vim~\cite{vim}
-and emacs~\cite{emacs}.
+different kinds of programming tools, which we chose from the Eclipse~\citeyearpar{eclipse} and
+Visual Studio~\citeyearpar{visualstudio} development environments, 
+as well as the extensible editors \citet{vim}
+and \citet{emacs}.
 Although retrospective interviews are commonly used in this type of research,
 the results can be influenced by people's memory of
 discovery and adoption. 
 Therefore, we used the tool list to help stimulate the participant's memories of
 tools that she might have discovered, using them as recall cues for known-item 
-memory retrieval~\cite{allen89}.
+memory retrieval~\citep{allen89}.
 We asked the participant to pick three tools from the list (or tools
 similar to tools on the list) and to describe how she discovered and learned
 about them. 
@@ -624,7 +626,7 @@ then transcribed and summarized them.
 From the summaries, he coded the discovery instances by mode, and also by any
 other categories that emerged, such as by the location in which the discovery
 took place.
-Similar to open coding~\cite{glaser2009discovery}, he then re-read the summaries and codings several times, 
+Similar to open coding~\citep{glaser2009discovery}, he then re-read the summaries and codings several times, 
 iteratively refining the codes during reviewing.
 He also categorized the contents of the summaries by question and identified
 patterns in responses and relationships between responses.
@@ -644,20 +646,20 @@ Two people volunteered through these personal contacts and the
 rest through the conference.
 
 Overall, 18 people responded and completed the interview, comparable to the
-size of similar studies such as those by Twidale (5 participants)~\cite{twidale05}
-and Rieman (14 participants)~\cite{rieman}.
+size of similar studies such as those by Twidale~\citeyearpar{twidale05} (5 participants)
+and Rieman~\citeyearpar{rieman} (14 participants).
 Participants had between 3 and 32 years of professional programming experience (median=9);
 not all were employed as programmers or software developers,
 although programming played a role in their job, or most recently held job. 
 Participants were between the ages of 21 and 51 (median=30.5). 
 Participants reported using a total of 18 different editors or development
 environments within the last year; the common ones (ordered from
-most to least frequently mentioned) being vi/vim~\cite{vim}, emacs~\cite{emacs},
-Visual Studio~\cite{visualstudio}, TextMate~\cite{textmate}, Eclipse~\cite{eclipse}, and
-Netbeans~\cite{netbeans}. 
+most to least frequently mentioned) being vi/vim~\citeyearpar{vim}, emacs~\citeyearpar{emacs},
+Visual Studio~\citeyearpar{visualstudio}, TextMate~\citeyearpar{textmate}, Eclipse~\citeyearpar{eclipse}, and
+Netbeans~\citeyearpar{netbeans}. 
 Participants reported using a total of 24 different languages within the last year;
-the common ones being python~\cite{python}, javascript~\cite{javascript}, PHP~\cite{php}, 
-Ruby~\cite{ruby}, Java~\cite{java}, C~\cite{c}, and perl~\cite{perl}.
+the common ones being python~\citeyearpar{python}, javascript~\citeyearpar{javascript}, PHP~\citeyearpar{php}, 
+Ruby~\citeyearpar{ruby}, Java~\citeyearpar{java}, C~\citeyearpar{c}, and perl~\citeyearpar{perl}.
 
    	\newcommand\catA{\Circle\xspace}
    	\newcommand\catB{\LEFTCIRCLE\xspace}
@@ -1005,7 +1007,7 @@ Other participants reported being given URLs by the teacher for later reference.
 \emh{summarize politeness, contrast with prior work?}
 
 In sum, participants reported that \discpull occurs in pair programming
-situations, consistent with other researchers' observations~\cite{cockburn00}, 
+situations, consistent with other researchers' observations~\citep{cockburn00}, 
 but also in other situations where two programmers are not working on the same
 task.
 Rather than passive discovery, participants reported that the observer
@@ -1230,7 +1232,7 @@ compared to the most frequently mentioned \context.
 This finding is consistent with Rieman's field study of
 learning and discovery, a study which provided evidence that 
 tool encounters are the most frequent way of discovering tools 
-in a variety of software applications~\cite{rieman}.
+in a variety of software applications~\citep{rieman}.
 
 \paragraph{Effectiveness of Discovery \Contexts.}\label{sec:effective}
 
@@ -1412,7 +1414,7 @@ other discovery \contexts (see Figure~\ref{tab:discoveryTypes}).
 This confirms McGrenere's conjecture, pointing out that while exploratory
 learning may be the most frequent kind of tool discovery, ``it may not
 necessarily be the most efficient or effective method of learning how to use a
-system''~\cite{mcgrenere2002design}.
+system''~\citep{mcgrenere2002design}.
 Indeed, these results confirm that exploratory learning is not the most effective.
 Another important finding is that trust was the most commonly cited
 determinant to the effectiveness of discovery, whichever the \context.
@@ -1512,7 +1514,7 @@ Although we did not initially plan to ask participants explicitly, we became int
 whether \discovery occurs between peers or between a supervisor
 and a subordinate.
 If incidental tool learning is largely a kind of 
-apprenticeship learning~\cite{lave}, then we should expect tool knowledge to
+apprenticeship learning~\citep{lave}, then we should expect tool knowledge to
 flow largely from senior to junior programmers.
 While \fsub, \hsub, and \rsub each described an instance of recommendations
 coming from supervisors, our results suggest that this is not always the case.
@@ -1720,7 +1722,7 @@ emails to participants when more elaboration on a discovery was warranted.
 At the end of the each participant's week of participation, we asked the participant to 
 fill out a post-study questionnaire, which included information about perceptions 
 of effectiveness of discovery modes, demographics, and software experience.
-A blank discovery report and post-study questionnaire can be found in the Appendix~\cite{appendix}.
+A blank discovery report and post-study questionnaire can be found in the Appendix~\citep{appendix}.
  
 About six weeks after a participant submitted a tool discovery report,
 we sent a follow-up questionnaire to determine whether the participant was still
@@ -1751,10 +1753,10 @@ If none of the raters agreed, the classification was treated as a missing value 
 the remainder of the analysis.
 
 To determine whether how internally consistent our new ratings were,
-we measured agreement between different raters using the Fleiss' kappa~\cite{fleiss1981measurement} value.
+we measured agreement between different raters using the Fleiss' kappa~\citep{fleiss1981measurement} value.
 The higher the kappa value, the more inter-rater reliability:
 Fleiss' kappa values between 0.61 and 0.80 are considered as substantial, 
-and values between 0.81 and 0.99 are considered as almost perfect~\cite{landis77}. 
+and values between 0.81 and 0.99 are considered as almost perfect~\citep{landis77}. 
 For discovery mode, the kappa value was 0.86, 
 while for intent, the kappa value was 0.79.
 These kappa values indicate strong agreement between the three raters.  
@@ -2119,7 +2121,7 @@ use the tool again at some point in the future.
 Participants' self-estimates of the elapsed time it 
 took to discover a tool may not have reflected the wall-clock time
 to discover the tool, a phenomenon that has been observed
-in experimental psychology~\cite{huttenlocher1990reports}.
+in experimental psychology~\citep{huttenlocher1990reports}.
 While the time estimate may not be accurate to the actual elapsed time,
 if the inaccuracy is consistent across all \contexts,
 we can still reasonably compare the time estimates against one another.
@@ -2189,10 +2191,10 @@ the effectiveness of the various discovery modes.
 In our interview study, participants' remarks suggested that tool learning may decline with
 age and experience, yet the diary study did not show any substantial 
 correlations between such maturity measures and the number of tools discovered.
-This agrees with previous work on technology learning in the workplace~\cite{brooke},
+This agrees with previous work on technology learning in the workplace~\citep{brooke},
 which suggests that there is a perception that older technology workers
 are less able to cope with new technology, even when research suggests
-the opposite~\cite{morrison}.
+the opposite~\citep{morrison}.
 Indeed, our second study suggests that learning, at least in terms of software tools,
 continues unabated throughout information workers' careers.
 
@@ -2241,8 +2243,8 @@ a few seconds.
 \paraHead{Noticeable Effects.} 
 In addition to making the causes of a tool invocation obvious, \discovery may
 be facilitated if the effects of a tool are clear.
-This is a collaborative extension of Nielsen's ``visibility of system status'' 
-usability heuristic~\cite{nielsenBook}.
+This is a collaborative extension of Nielsen's~\citeyearpar{nielsenBook} ``visibility of system status'' 
+usability heuristic.
 Eclipse's Organize Imports command is an example of a tool that may not have
 noticeable effects; the tool automatically adds and removes import statements
 from Java files, but if those statements are not visible on screen, then an
@@ -2271,7 +2273,7 @@ future changes to the template are reflected in the slide.
 % 
 % have long been recognized as problem for
 % single-user environments because the user may make inadvertent errors when she
-% forgets what mode she is in~\cite{raskin}.
+% forgets what mode she is in~\citep{raskin}.
 % 
 % Our research suggests that modal user interfaces can be harmful for
 % multi-user environments, such as development environments during
@@ -2398,13 +2400,13 @@ tool, so you should check it out,''\footnote{A direct quote from \jsub.} making
 a recommendation based on what your peers are using.
 In this way, the user no longer needs to have trust in the recommendation
 system beyond that it is accurately recording her teams' tool usage, and
-instead the user can rely on trust between teammates~\cite{murphyHill12b}.
+instead the user can rely on trust between teammates~\citep{murphyHill12b}.
 This was the approach taken by Toolbox, where the system
 looked for expert tool users, requested that these experts write down
 descriptions of the tools, and published the descriptions as newsletters in
-the expert's organization~\cite{maltzahn}.
+the expert's organization~\citep{maltzahn}.
 We have sketched such a system using screencasts 
-for software developers in a recent paper~\cite{murphyHill12b}.
+for software developers in a recent paper~\citep{murphyHill12b}.
 
 Another way to avoid the trust dilemma is to sidestep it altogether.
 \csub mentioned that a recommender system might be acceptable if it makes ``you
@@ -2432,7 +2434,7 @@ user who does not yet know it will also find it useful.
 Recommender systems could gather, summarize, and present the usage habits of
 the community, rather than relying on only one individual.
 This is the approach taken by some recommender systems, such as
-CommunityCommands~\cite{matejka09}.
+CommunityCommands~\citep{matejka09}.
 
 Interviewees noted that sometimes they did not make recommendations because they
 did not think that their peer was ready to appreciate the usefulness of a tool 
@@ -2516,10 +2518,10 @@ we can craft several realistic learning scenarios for such an experiment.
 % So, how could a distributed team share tool knowledge effectively?
 % One answer is the notification produced by Toolbox, which ``periodically
 % advertises the ToolBox services to the community by sending out weekly email
-% newsletters''~\cite{maltzahn}.
+% newsletters''~\citep{maltzahn}.
 % Our subjects' distrust for advertising in the study described here, coupled
 % with our previous experience where programmers had difficulty in understanding
-% textual recommendations~\cite{apple}, suggests that this approach will not be
+% textual recommendations~\citep{apple}, suggests that this approach will not be
 % as effective as traditional peer discovery.
 % %non-contextual, also
 % An alternative approach for presenting tool knowledge was suggested by \lsub:
@@ -2608,7 +2610,7 @@ This work was supported by IBM, NSERC,
 as well as 
 by the National Science Foundation under grant number 1252995.
 
-\bibliographystyle{abbrv}
+\bibliographystyle{apalike}
 \bibliography{references}
 
 \end{document}
